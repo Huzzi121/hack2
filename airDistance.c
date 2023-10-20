@@ -16,6 +16,12 @@ int main()
         scanf("%lf", &lat2);
     printf("Longitude (in degrees): ");
         scanf("%lf", &lon2);
+    
+    double temp1,temp2,temp3,temp4;
+    temp1=lat1;
+    temp2=lon1;
+    temp3=lat2;
+    temp4=lon2;
 
     lat1=lat1 * 3.14/180.0;
     lon1=lon1 * 3.14/180.0;
@@ -27,7 +33,11 @@ int main()
 
     Distance = acos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(lon2 - lon1)) * R;
 
-    
+    printf("location Distance");
+    printf("Origin:%f,%f",temp1,temp2);
+    printf("Destination:%f,%f",temp3,temp4);
+    printf("Air Distance:%f", Distance);
+
 
 
     return 0;
