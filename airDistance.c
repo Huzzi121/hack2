@@ -17,5 +17,12 @@ int main()
     printf("Longitude (in degrees): ");
         scanf("%lf", &lon2);
 
+    lat1=lat1 * 3.14/180.0;
+    lon1=lon1 * 3.14/180.0;
+    lat2=lat2 * 3.14/180.0;
+    lon2=lon2 * 3.14/180.0;
+    
+
+
     return 0;
 }
