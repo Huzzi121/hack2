@@ -33,10 +33,11 @@ int main()
 
     Distance = acos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(lon2 - lon1)) * R;
 
-    printf("location Distance");
-    printf("Origin:%f,%f",temp1,temp2);
-    printf("Destination:%f,%f",temp3,temp4);
-    printf("Air Distance:%f", Distance);
+    printf("\nlocation Distance\n");
+    printf("==================");
+    printf("Origin:%f,%f\n",temp1,temp2);
+    printf("Destination:%f,%f\n",temp3,temp4);
+    printf("Air Distance:%f\n", Distance);
 
 
 
