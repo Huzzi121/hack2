@@ -21,6 +21,12 @@ int main()
     lon1=lon1 * 3.14/180.0;
     lat2=lat2 * 3.14/180.0;
     lon2=lon2 * 3.14/180.0;
+
+    int R=6371.0;
+    int Distance;
+
+    Distance = acos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(lon2 - lon1)) * R;
+
     
 
 
